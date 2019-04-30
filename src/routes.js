@@ -34,7 +34,6 @@ routes.post(
 )
 routes.put(
   '/ads/:id',
-  validate(validators.Ad),
   handle(controllers.AdController.update)
 )
 routes.delete('/ads/:id', handle(controllers.AdController.destroy))
